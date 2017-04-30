@@ -14,7 +14,7 @@
       color: #333;
       }
     .wrap { 
-    	max-width: 800px;
+    	max-width: 900px;
     	margin: 20px auto 200px;
          padding: 0 25px;
     }
@@ -22,20 +22,18 @@
         font-size: 1.5rem;
         margin-bottom: .25rem;
         margin-top: .5rem;
-}
+        }
 	h2 {
 		margin-top: 0;
 		font-weight: 400;
 		color: #666;
         font-size: 1rem;
-}
-	}
-
-
-
-	h3 { margin-top: 3rem;
+        }
+	
+    h3 { margin-top: 3rem;
 		margin-bottom: 1rem;}
-	strong { font-weight: 700; }
+	
+    strong { font-weight: 700; }
 
 
 
@@ -43,8 +41,10 @@
 
     .navigation {
         background: #eee;
-        padding: 1rem;
+        padding: .5rem 1rem;
         margin-bottom: 2rem;
+        max-width: 940px;
+        margin: 0 auto;
     }
 
     .navigation a {
@@ -58,28 +58,62 @@
     }
 
      .titletext {
-        margin-top: 1rem;
-        font-size:2rem;
+        
+        
         font-weight: 600;
         float: left;
         text-align: left;
         margin-left: 2rem;
+        line-height: 5.15rem;
+    }
+
+    @media (max-width: 750px) {
+          .titletext {
+            display: none;
+          }
+          
+        }
+
+    @media (min-width: 750px) and (max-width: 1000px) {
+        .titletext {
+            font-size: 1rem;
+          }
+        .homepage_title {
+            display: none;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .titletext {
+            font-size: 1.5rem;
+          }
+        .homepage_title {
+            display: none;
+        }
+    }
+
+
+
+
+
+    .headerwrap {
+        background: #eee;
     }
 
     </style>
 
   </head>
-
-
   <body>
+    
+<div class="headerwrap">
     	
         <div class="navigation">
-            <span style="float:left; width:80px;"><a href="/"><img src="logo_300.png" style="width:80px;" /></a></span>
+            <span style="float:left; width:110px; height:80px;"><a href="/"><img src="logo_300.png" style="width:80px;" /></a></span>
 
             <span class="titletext">IWVSC Legacy 5-a-Side Tournament</span>
 
 
-            <span style="float:right;">
+            <span style="float:right; height: 80px;">
                 <a href="#" style="color: #2f9c44; border-bottom: 3px solid #2f9c44;">Event</a>
                 <a href="/teams.html">Teams</a>
                 <a href="/bios.html">Bios</a>
@@ -87,14 +121,16 @@
             <div style="clear:both;"></div>
         </div>
 
+</div>
+
 
 <div class="wrap">
 
         <h1>Dates:</h1>
         <ul>
             <li>Tournament will be held May 27th-28th; Memorial Day weekend</li>
-            <li>Registration begins <strong>May 1st at noon</strong>, and will run through <strong>May 19th at 8:00pm</strong></li>
-            <li>Rosters must be finalized by <strong>May 24th at noon</strong></li>
+            <li>Registration begins <strong>May 1st at 12pm noon</strong>, and will run through <strong>May 20th at 12pm noon</strong></li>
+            <li>Rosters must be finalized by <strong>May 24th at 12pm noon</strong></li>
         </ul>
 
         <h1>Cost:</h1>
@@ -109,10 +145,13 @@
 
         <h1>Contact:</h1>
         <ul>
-            <li>Visit the <a href="https://www.facebook.com/iwvsoccerclubridgecrest/">IWV Soccer Club on Facebook</a></li>
+            <li>Visit the <a href="https://www.facebook.com/iwvsoccerclubridgecrest/">5-A-Side Legacy Tournament</a> on Facebook</li>
             <li>Email Kelly Blake (organizer) at <a href="mailto:soccercoachkelly28@gmail.com">soccercoachkelly28@gmail.com</a></li>
         </ul>
 
     </div>
+
+
+
   </body>
 </html>
