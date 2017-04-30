@@ -14,7 +14,7 @@
       color: #333;
       }
     .wrap { 
-    	max-width: 800px;
+    	max-width: 900px;
     	margin: 20px auto 200px;
          padding: 0 25px;
     }
@@ -22,20 +22,18 @@
         font-size: 1.5rem;
         margin-bottom: .25rem;
         margin-top: .5rem;
-}
+        }
 	h2 {
 		margin-top: 0;
 		font-weight: 400;
 		color: #666;
         font-size: 1rem;
-}
-	}
-
-
-
-	h3 { margin-top: 3rem;
+        }
+	
+    h3 { margin-top: 3rem;
 		margin-bottom: 1rem;}
-	strong { font-weight: 700; }
+	
+    strong { font-weight: 700; }
 
 
 
@@ -43,8 +41,10 @@
 
     .navigation {
         background: #eee;
-        padding: 1rem;
+        padding: .5rem 1rem;
         margin-bottom: 2rem;
+        max-width: 940px;
+        margin: 0 auto;
     }
 
     .navigation a {
@@ -58,27 +58,62 @@
     }
 
      .titletext {
-        margin-top: 1rem;
-        font-size:2rem;
+        
+        
         font-weight: 600;
         float: left;
         text-align: left;
         margin-left: 2rem;
+        line-height: 5.15rem;
+    }
+
+    @media (max-width: 750px) {
+          .titletext {
+            display: none;
+          }
+          
+        }
+
+    @media (min-width: 750px) and (max-width: 1000px) {
+        .titletext {
+            font-size: 1rem;
+          }
+        .homepage_title {
+            display: none;
+        }
+    }
+
+    @media (min-width: 900px) {
+        .titletext {
+            font-size: 1.5rem;
+          }
+        .homepage_title {
+            display: none;
+        }
+    }
+
+
+
+
+
+    .headerwrap {
+        background: #eee;
     }
 
     </style>
 
   </head>
-
-
   <body>
+    
+<div class="headerwrap">
     	
         <div class="navigation">
-            <span style="float:left; width:80px;"><a href="/"><img src="logo_300.png" style="width:80px;" /></a></span>
+            <span style="float:left; width:110px; height:80px;"><a href="/"><img src="logo_300.png" style="width:80px;" /></a></span>
 
             <span class="titletext">IWVSC Legacy 5-a-Side Tournament</span>
 
-            <span style="float:right;">
+
+            <span style="float:right; height: 80px;">
                 <a href="/event.html">Event</a>
                 <a href="/teams.html">Teams</a>
                 <a href="#" style="color: #2f9c44; border-bottom: 3px solid #2f9c44;">Bios</a>
@@ -86,14 +121,17 @@
             <div style="clear:both;"></div>
         </div>
 
+</div>
+
 
 <div class="wrap">
-    	
+        
         <p style="margin-bottom: 1rem;">The IWVSC Legacy Tournament is the next iteration in a 20 year tradition of 5-a-side soccer in Ridgecrest. Here are the stories of those honored...</p>
 
         <h1>Matt Armstrong</h1>
 
-    	<p>Matt Armstrong was a High School varsity soccer player with intentions of playing college soccer at Fresno State College. He wanted to follow in his siblings footsteps. Ted, Eric and Renee were all playing college soccer. Matt was a very good defensive player and his chances of playing at the college level were very good. Matthew took his soccer very seriously. When that whistle blew to start the game he became obsessed with doing his best.</p>
+
+        <p>Matt Armstrong was a High School varsity soccer player with intentions of playing college soccer at Fresno State College. He wanted to follow in his siblings footsteps. Ted, Eric and Renee were all playing college soccer. Matt was a very good defensive player and his chances of playing at the college level were very good. Matthew took his soccer very seriously. When that whistle blew to start the game he became obsessed with doing his best.</p>
 
         <p>Matthew never got upset with his teammates as long as they gave it their best. He would always cheer them on, regardless of whether their shot went wide or their pass was long.</p>
 
@@ -102,6 +140,8 @@
         <p>Matt enjoyed life as much as anyone. After the game was over it was all about food and who could eat the most at In-n-out. Once after a tied game with the alumni, Matt’s brothers came home all upset because they didn’t beat Matt’s varsity team. Both were cussing up a storm, but Matt walked in the door and didn’t gloat, just simply asked his mom “what’s for dinner?”</p>
 
         <p>Matthew Armstrong died from meningitis January 7, 1996. At the time of his death Matthew was a junior at Burroughs High School and a dedicated soccer player. He was a role model for his fellow players, peers, and the Ridgecrest community. He was a member of the high school varsity soccer team: he and his family were long time members of the Scorpions Soccer Club; and his brothers and sister played Burroughs soccer, Scorpions Club soccer, and college soccer.</p>
+
+
 
         <h1>Paul Weimholt</h1>
 
@@ -114,5 +154,8 @@
         <p>As a small business owner, Paul enhanced the community with not only service and excellent product but also his altruistic nature. He supported all community activities especially those involving the youth. A kid at heart, he relished opportunities to interact with younger generations. Paul’s smile and spirit reached all corners of the community and his T-shirts live as a memorial to his gentle and pervasive character.</p>
 
     </div>
+
+
+
   </body>
 </html>
